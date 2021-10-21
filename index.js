@@ -1,4 +1,4 @@
-//const { writeFile } = require('./utils/generate-site.js');
+const generateContent = require("./src/generateMarkdown");
 const inquirer = require("inquirer");
 
 const promptUser = () => {
@@ -100,5 +100,5 @@ const promptUser = () => {
   ]);
 };
 promptUser().then((data) => {
-  console.log(data)
+  console.log(generateContent(data));
 });
