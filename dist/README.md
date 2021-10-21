@@ -1,7 +1,9 @@
 
-# README-Generator
-It generates a README file based on user input just like this one
+# Mastrocola.io
+A shipment tracker built on Algorand Blockchain
 
+![License](https://img.shields.io/badge/license-Apache License 2.0-blue)
+    
 
 ## Table of Contents
 
@@ -9,20 +11,33 @@ It generates a README file based on user input just like this one
 
 * [Usage-Instructions](#usage-instructions)
 
+* [License](#license)
+
+* [Test-Instructions](#test-instructions)
+
 * [Questions](#questions)
 
 
 
 ## Installation-Instructions
-Run - npm install
+npm install
 
 
 ## Usage-Instructions
-Run - node index
+node start
+    
+
+## License
+This project is covered under Apache License 2.0
+
+![License](https://img.shields.io/badge/license-Apache License 2.0-blue)
+    
     
 
 
-
+## Test-Instructions
+Make sure to add you testing key to the env file
+    
 
 ## Questions
     
