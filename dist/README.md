@@ -30,7 +30,7 @@ npm start
 ## License
 This project is covered under Apache License 2.0
 
-![License](https://img.shields.io/badge/license-Apache License 2.0-blue/)
+![License](https://img.shields.io/badge/license-Apache--License--2.0-blue/)
     
     
 
