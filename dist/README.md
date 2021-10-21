@@ -1,32 +1,34 @@
-    # README.md
-    This node script generates a README.ms file based on user CLI input
+# README-Generator
+It generates a README.md file based on user input
+    
+    
+## Table of Contents
+
+* [Install Instructions](#install instructions)
+
+* [Usage Instructions](#usage instructions)
+
+* [Questions](#questions)
 
 
-    ## Table of Contents
+    
+## Installation Instructions
+Run npm install
 
-    * [Install Instructions](#install instructions)
+    
+## Usage Instructions
+Run node index
+    
+    
+    
+    
+    
+## Questions
+    
+[Github](https://github.com/D-Mastrocola)
 
-    * [Usage Instructions](#usage instructions)
-
-    * [Questions](#questions)
-
-
-
-    ## Installation Instructions
-    run npm install
-
-
-    ## Usage Instructions
-    run node index
-
-
-
-
-
-    ## Questions
-
-    [Github](https://github.com/D-Mastrocola)
-
-    mastrodomcola@gmail.com
-
-    If you have any questions feel free to message me on github or shoot me an email
+mastrodomcola@gmail.com
+    
+If you have any questions feel free to message me on github or shoot me an email
+    
+    
