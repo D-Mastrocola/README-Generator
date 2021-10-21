@@ -1,8 +1,8 @@
 
 # Mastrocola.io
-A shipment tracker built on Algorand Blockchain
+A shipment tracker built on the algorand blockchain using smart contracts
 
-![License](https://img.shields.io/badge/license-Apache License 2.0-blue)
+![License](https://img.shields.io/badge/license-Apache License 2.0-blue/)
     
 
 ## Table of Contents
@@ -24,19 +24,19 @@ npm install
 
 
 ## Usage-Instructions
-node start
+npm start
     
 
 ## License
 This project is covered under Apache License 2.0
 
-![License](https://img.shields.io/badge/license-Apache License 2.0-blue)
+![License](https://img.shields.io/badge/license-Apache License 2.0-blue/)
     
     
 
 
 ## Test-Instructions
-Make sure to add you testing key to the env file
+Make sure to put you test net key in the env file
     
 
 ## Questions
