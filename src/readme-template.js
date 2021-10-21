@@ -43,7 +43,7 @@ ${data.usageInstructions}
 let generateLicenseBadge = (data) => {
   if (data.confirmLicense) {
     return `
-![License](https://img.shields.io/badge/license-${data.licenseSelect.replace(' ', '--')}-blue/)
+![License](https://img.shields.io/badge/license-${data.licenseSelect.replaceAll(' ', '--')}-blue/)
     `;
   }
   return "";
