@@ -41,9 +41,10 @@ ${data.usageInstructions}
   return "";
 };
 let generateLicenseBadge = (data) => {
+  let badgeURL = data.licenseSelect.split(' ').join('--')
   if (data.confirmLicense) {
     return `
-![License](https://img.shields.io/badge/license-${data.licenseSelect.replaceAll(' ', '--')}-blue/)
+![License](https://img.shields.io/badge/license-${badgeURL}-blue/)
     `;
   }
   return "";
