@@ -2,7 +2,7 @@
 # Mastrocola.io
 A shipment tracker built on the algorand blockchain using smart contracts
 
-![License](https://img.shields.io/badge/license-Apache License 2.0-blue/)
+![License](https://img.shields.io/badge/license-Apache--License--2.0-blue/)
     
 
 ## Table of Contents
