@@ -1,4 +1,5 @@
-const generateContent = require("./src/generateMarkdown");
+const generateContent = require("./src/readme-template");
+const writeFile = require('./utils/generateFile.js');
 const inquirer = require("inquirer");
 
 const promptUser = () => {
@@ -163,7 +164,16 @@ const promptUser = () => {
   ]);
 }
 promptUser()
-.then((data) => {
+.then(data => {
   let fileContents = generateContent(data)
-  console.log(fileContents);
+  return fileContents;
+})
+.then(fileContents => {
+  return writeFile(fileContents);
+})
+.then(writeFileResponse => {
+  console.log(writeFileResponse);
+})
+.catch(err => {
+  console.log(err);
 });
