@@ -1,9 +1,16 @@
 # README-Generator
 This script generates a README.md file based on user input from the CLI.
 
+![Screenshot](https://github.com/D-Mastrocola/README-Generator/blob/main/assets/screenshot.PNG)
+
+
 [Example Output File](https://github.com/D-Mastrocola/README-Generator/tree/main/dist/)
 
+[Walkthrough Video](https://drive.google.com/file/d/1QhqrZg6i3EHdjfR5y8eRTVuLtoFEMho9/view?usp=sharing)
+
 ## Table Of Contents
+* [Installation](#installation)
+* [Usage](#usage)
 * [User Story](#user-story)
 * [Acceptance Criteria](#acceptance-criteria)
 
