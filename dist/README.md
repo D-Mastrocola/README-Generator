@@ -1,28 +1,29 @@
+
 # README-Generator
-It generates a README.md file based on user input
-    
-    
+It generates a README file based on user input just like this one
+
+
 ## Table of Contents
 
-* [Install Instructions](#install instructions)
+* [Install-Instructions](#install-instructions)
 
-* [Usage Instructions](#usage instructions)
+* [Usage-Instructions](#usage-instructions)
 
 * [Questions](#questions)
 
 
-    
-## Installation Instructions
-Run npm install
 
+## Installation-Instructions
+Run - npm install
+
+
+## Usage-Instructions
+Run - node index
     
-## Usage Instructions
-Run node index
-    
-    
-    
-    
-    
+
+
+
+
 ## Questions
     
 [Github](https://github.com/D-Mastrocola)

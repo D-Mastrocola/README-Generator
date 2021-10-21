@@ -1,11 +1,11 @@
 let generateTableOfContents = (data) => {
   let tableArr = [];
-  if (data.confirmInstallInstructions) tableArr.push("Install Instructions");
-  if (data.confirmUsageInstructions) tableArr.push("Usage Instructions");
+  if (data.confirmInstallInstructions) tableArr.push("Install-Instructions");
+  if (data.confirmUsageInstructions) tableArr.push("Usage-Instructions");
   if (data.confirmLicense) tableArr.push("License");
   if (data.confirmContributionGuidelines)
-    tableArr.push("Contribution Guidelines");
-  if (data.confirmTestInstructions) tableArr.push("Test Instructions");
+    tableArr.push("Contribution-Guidelines");
+  if (data.confirmTestInstructions) tableArr.push("Test-Instructions");
 
   tableArr.push("Questions");
   if (tableArr.length > 0) {
@@ -25,7 +25,7 @@ ${tableArr
 let generateInstallInstructions = (data) => {
   if (data.confirmInstallInstructions) {
     return `
-## Installation Instructions
+## Installation-Instructions
 ${data.installInstructions}
 `;
   }
@@ -34,7 +34,7 @@ ${data.installInstructions}
 let generateUsageInstructions = (data) => {
   if (data.confirmUsageInstructions) {
     return `
-## Usage Instructions
+## Usage-Instructions
 ${data.usageInstructions}
     `;
   }
@@ -61,7 +61,7 @@ ${generateLicenseBadge(data)}
 let generateContributionGuidelines = (data) => {
   if (data.confirmContributionGuidelines) {
     return `
-## Contribution Guidelines
+## Contribution-Guidelines
 ${data.contributionGuidelines}
     `;
   }
@@ -70,7 +70,7 @@ ${data.contributionGuidelines}
 let generateTestInstructions = (data) => {
   if (data.confirmTestInstructions) {
     return `
-## Test Instructions
+## Test-Instructions
 ${data.testInstructions}
     `;
   }
