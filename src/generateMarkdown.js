@@ -2,22 +2,22 @@ let generateTableOfContents = (data) => {
   let tableArr = [];
   if (data.confirmInstallInstructions) tableArr.push("Install Instructions");
   if (data.confirmUsageInstructions) tableArr.push("Usage Instructions");
-  if (data.contributionGuidelines) tableArr.push("Contribution Guidelines");
+  if (data.confirmLicense) tableArr.push("License");
+  if (data.confirmContributionGuidelines) tableArr.push("Contribution Guidelines");
   if (data.confirmTestInstructions) tableArr.push("Test Instructions");
 
-  console.log(tableArr);
-
+  tableArr.push('Questions')
   if (tableArr.length > 0) {
     return `
     ## Table of Contents
     ${tableArr.map((tableEl) => {
-      console.log(tableEl);
-      console.log("* [" + tableEl + "](#" + tableEl.toLowerCase() + ")");
-      return "* [" + tableEl + "](#" + tableEl.toLowerCase() + ")";
-    })}
+    return `
+    * [${tableEl}](#${tableEl.toLowerCase()})
+    `;
+    }).join('')}
     `;
   }
-  return ``;
+  return '';
 };
 let generateInstallInstructions = (data) => {
   if (data.confirmInstallInstructions) {
@@ -37,6 +37,24 @@ let generateUsageInstructions = (data) => {
   }
   return "";
 };
+let generateLicenseBadge = (data) => {
+  if (data.confirmLicense) {
+    return `
+    ![License](https://img.shields.io/badge/license-${data.licenseSelect}-blue)
+    `;
+  }
+  return '';
+};
+let generateLicenseSection = (data) => {
+  if (data.confirmLicense) {
+    return `
+    ## License
+    This project is covered under ${data.licenseSelect}
+    ${generateLicenseBadge(data)}
+    `;
+  }
+  return '';
+};
 let generateContributionGuidelines = (data) => {
   if (data.confirmContributionGuidelines) {
     return `
@@ -55,19 +73,32 @@ let generateTestInstructions = (data) => {
   }
   return "";
 };
+let generateQuestionsSection = (data) => {
+
+    return `
+    ## Questions
+    
+    [Github](https://github.com/${data.github})
+
+    ${data.email}
+    
+    If you have any questions feel free to message me on github or shoot me an email
+    `
+}
 
 module.exports = (templateData) => {
-  console.log(templateData);
   // destructure page data by section
-  const { title, description } = templateData;
 
   return `
-    # ${title}
-    ${description}
+    # ${templateData.title}
+    ${templateData.description}
+    ${generateLicenseBadge(templateData)}
     ${generateTableOfContents(templateData)}
     ${generateInstallInstructions(templateData)}
     ${generateUsageInstructions(templateData)}
+    ${generateLicenseSection(templateData)}
     ${generateContributionGuidelines(templateData)}
     ${generateTestInstructions(templateData)}
+    ${generateQuestionsSection(templateData)}
     `;
 };
